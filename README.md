@@ -1,7 +1,7 @@
 ## Themis 
 
 ### 架构总览   
-![架构图](data/img/arch.png)   
+![架构图](arch.png)   
 图中主要分为四大块，数据采集、规则解析、任务导出和web管理，存储主要使用mongodb和mysql。mysql主要用来存储pt-query-digest采集的数据，其他的数据，如oracle的采集结果，规则的初始化，任务的生成，解析的结果等都存到mongodb里。 
 
 ### 采集数据： 
