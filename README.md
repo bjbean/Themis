@@ -38,7 +38,7 @@ Themis，是宜信公司DBA团队开发的一款数据库审核产品。可帮�
 
 ### 平台架构   
 
-![架构图](arch.png)   
+![架构图](img/arch.png)   
 图中的方框部分，为平台的主要模块。底色不同的模块，表示当前的进度状态不同。虚线代表数据流，实线代表控制流。其核心为这几个模块：
 
 1. 数据采集模块。它是负责从数据源抓取审核需要的基础数据。目前支持从Oracle、MySQL抓取。
@@ -50,7 +50,7 @@ Themis，是宜信公司DBA团队开发的一款数据库审核产品。可帮�
 
 ### 操作流程
 
-![流程图](process.png)   
+![流程图](img/process.png)   
 从处理流程的角度，看看平台的整体处理过程。
 
 ##### 1.规则管理   
@@ -92,44 +92,44 @@ Themis，是宜信公司DBA团队开发的一款数据库审核产品。可帮�
 *规则权重及扣分，最终会累积为一个总的扣分，平台会按百分制进行折算。通过这种方式，可起到一定的量化作用。*
 
 ##### 规则_对象类（Oracle部分）    
-![规则列表](rule_obj_oracle.png)   
+![规则列表](img/rule_obj_oracle.png)   
 
 ##### 规则_对象类（MySQL部分）    
-![规则列表](rule_obj_mysql.png)   
+![规则列表](img/rule_obj_mysql.png)   
 
 ##### 规则_执行计划类（Oracle部分）    
-![规则列表](rule_plan_oracle.png)   
+![规则列表](img/rule_plan_oracle.png)   
 
 ##### 规则_执行计划类（MySQL部分）    
-![规则列表](rule_plan_mysql.png)   
+![规则列表](img/rule_plan_mysql.png)   
 
 ##### 规则_执行特征类（Oracle部分）    
-![规则列表](rule_exec_oracle.png)   
+![规则列表](img/rule_exec_oracle.png)   
 
 ##### 规则_执行特征类（MySQL部分）    
-![规则列表](rule_exec_mysql.png)   
+![规则列表](img/rule_exec_mysql.png)   
 
 ##### 规则_文本类    
-![规则列表](rule_statement.png)   
+![规则列表](img/rule_statement.png)   
 
 
 ### 界面展示
 
 ##### 对象审核报告（概览部分）
 
-![UI图](UI_1.png)   
+![UI图](img/UI_1.png)   
 
 ##### 执行计划审核报告（概览部分）
 
-![UI图](UI_2.png)   
+![UI图](img/UI_2.png)   
 
 ##### 执行计划审核明细报告（节选）
 
-![UI图](UI_3.png)
+![UI图](img/UI_3.png)
 
 ##### 执行计划审核明细报告（节选）
 
-![UI图](UI_4.png)
+![UI图](img/UI_4.png)
 
 
 ### 后续计划
