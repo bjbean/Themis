@@ -1,14 +1,24 @@
-### 采集数据： 
-#### mysql部分： 
+### 采集数据
+#### mysql部分
 pt-query-digest使用 
-1. 可以将慢日志集中到一个地方，再集中入库 
-2. 也可以在每台mysql机器上安装pt-query-digest,再将解析结果推送到存储机器上 
+
+1. 方案一：可以将慢日志集中到一个地方，再集中入库 
+
+2. 方案二：在每台mysql机器上安装pt-query-digest,再将解析结果推送到存储机器上 
+
 本平台采用第二种方案 
-首先安装mysql 
-从https://www.percona.com/get/pt-query-digest下载并安装pt-query-digest，如果缺少依赖使用yum安装
-使用scirpt/pt_query_digest.sql初始化表结构,不要使用默认的表结构 
-在目标机器上配置好pt-query-digest.sh脚本，主要是配置存储解析结果的mysql机器的帐号，密码，机器ip，端口号，以及慢日志的位置等。 
-运行pt-query-digest.sh脚本开始搜集mysql慢查询数据，后面可以将其加入定时任务，按固定时间段搜集。 
+
+* 安装mysql
+
+* 安装pt-query-digest
+
+  从https://www.percona.com/get/pt-query-digest下载并安装pt-query-digest。如果缺少依赖，使用yum安装。
+* 配置pt-query-digest
+
+  使用scirpt/pt_query_digest.sql初始化表结构，不要使用默认的表结构。在目标机器上配置好pt-query-digest.sh脚本，主要是配置存储解析结果的mysql机器的帐号、密码、机器IP、端口号以及慢日志的位置等信息。 
+* 运行pt-query-digest
+  
+  运行pt-query-digest.sh，开始搜集mysql慢查询数据。后面可以将其加入定时任务，按固定时间段搜集。 
 
 #### oracle部分： 
 下载mongodb，安装mongodb，用来存储规则和抓取的数据，执行的任务等 
