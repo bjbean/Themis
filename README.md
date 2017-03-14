@@ -1,3 +1,7 @@
+项目正式开源如下地址，欢迎大家继续关注、试用。
+
+https://github.com/CreditEaseDBA/Themis
+
 # Themis 
 ![女神图](img/themis.jpg)   
 Themis(泰美斯)，是希腊正义与法律女神，以头脑清晰见称。项目采用此名称，寓意着平台可对数据库质量公平判断，明察秋毫之意。
